@@ -1,0 +1,42 @@
+<div class="homepage">
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Welcome to NextGen Car Rental</h1>
+        <p>Your gateway to innovative and eco-friendly car rentals.</p>
+       <a routerLink="/fleet"> <button class="cta-button">Book Now</button></a>
+      </div>
+    </div>
+  
+    <div class="services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="service" *ngFor="let service of services">
+        <img [src]="service.icon" alt="{{service.title}}" class="service-icon">
+        <h3>{{service.title}}</h3>
+        <p>{{service.description}}</p>
+      </div>
+    </div>
+  
+    <div class="fleet">
+      <h2 class="section-title">Our Fleet</h2>
+      <div class="car" *ngFor="let car of fleet">
+        <img [src]="car.image" alt="{{car.model}}" class="car-image">
+        <h3>{{car.model}}</h3>
+        <p>{{car.description}}</p>
+      </div>
+    </div>
+  
+    <div class="testimonials">
+      <h2 class="section-title">Customer Testimonials</h2>
+      <div class="testimonial" *ngFor="let testimonial of testimonials">
+        <p class="testimonial-text">"{{testimonial.text}}"</p>
+        <p class="testimonial-author">- {{testimonial.author}}</p>
+      </div>
+    </div>
+  
+    <div class="cta">
+      <h2>Ready to Drive?</h2>
+      <p>Book your next car with NextGen Car Rental today!</p>
+      <a routerLink="/fleet"><button class="cta-button">Get Started</button></a>
+    </div>
+  </div>
+  

@@ -1,0 +1,27 @@
+<div class="createReservationContainer">
+  <div class="formContainer">
+      <form (ngSubmit)="bookingRental(rentalForm)" #rentalForm="ngForm">
+          
+          <label for="first_name">First Name</label><br>
+          <input type="text" ngModel name="first_name" placeholder="First Name"><br><br>
+          
+          <label for="last_name">Last Name</label><br>
+          <input type="text" ngModel name="last_name" placeholder="Last Name">
+          <br>
+          <br>
+          <label for="rental_id">Vehicle</label><br>
+          <select name="rental_id" ngModel>
+              <option value="">Select one</option>
+              <option name="rental_id" *ngFor="let rental of rentals">
+                  {{rental['name']}}
+              </option> 
+          </select><br><br>
+      
+          <label for="TRN">TRN</label><br> 
+          <input type="text" ngModel name="TRN" placeholder="TRN "><br><br>
+          
+      
+          <input type="submit" value="Book" class="btn">
+      </form>
+  </div>
+</div>

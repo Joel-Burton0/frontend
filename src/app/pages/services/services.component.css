@@ -1,0 +1,52 @@
+.services-page {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .service-card {
+    background-color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .service-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  .service-details {
+    flex-grow: 1;
+  }
+  
+  .service-title {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,13 @@
+<div class="FormContainer">
+    <button class="backbtn" routerLink="/Admin">Back</button>
+    <div class="formBox">
+        <form (ngSubmit)="deleteFile(rentalForm)" #rentalForm="ngForm">
+            <input type="text"  readonly name="name" ngModel>
+            <input type="text"  readonly name="description" ngModel>
+            <input type="text"  readonly name="status" ngModel >
+            <input type="text" ngModel readonly name="price" >
+
+            <input type="submit" placeholder="Add Vehicle" value="Delete">
+        </form>
+    </div>
+</div>

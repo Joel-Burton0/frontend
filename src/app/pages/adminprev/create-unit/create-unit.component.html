@@ -1,0 +1,14 @@
+<div class="FormContainer">
+    <button class="backbtn" routerLink="/Admin">Back</button>
+    <div class="formBox">
+        <form  #rentalForm>
+            <input type="text" ngModel name="name" placeholder="Name">
+            <input type="text" ngModel name="description" placeholder="description">
+            <input type="text" ngModel name="status" placeholder="Status">
+            <input type="text" ngModel name="price" placeholder=" $000.00">
+            <input type="file" ngModel name="img" placeholder="Image One">
+       
+            <input type="submit" value="Add to Fleet" (click)="addNewRental(rentalForm)">
+        </form>
+    </div>
+</div>

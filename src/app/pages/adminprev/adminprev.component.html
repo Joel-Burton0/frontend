@@ -1,0 +1,77 @@
+<title>Nextgen Car Rentals Admin Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Nextgen Car Rentals</h1>
+    </header>
+    <aside class="sidebar">
+      <ul>
+        <i><a routerLink="/create-file">Add to Fleet</a></i>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <section id="dashboard">
+        <h2>Dashboard</h2>
+        <p>Welcome to the administrator dashboard.</p>
+      </section>
+      <div class="dashboard2" *ngFor="let rental of rentals">
+        <div class="item">
+                    <div class="main-content">
+                        <div class="infoBox">
+                            <h1>Name:{{rental['name']}}</h1>
+                            <h1>description:{{rental['description']}}</h1>
+                            <h2>status: {{rental['status']}}</h2>
+                            <h2>Weekly Cost: {{rental['price']}}</h2>                                                                    
+                          <img src="http://localhost:8888/uploads/{{rental['img']}}" style="width: 240px; height: 200px;">
+                        </div>
+                    </div>
+                    <div class="actions">
+                        <div class="actionBox">
+                            <a routerLink="/update/{{rental['id']}}">Update |</a> <br>
+                            <hr>  <hr>
+                            <a routerLink="/remove/{{rental['id']}}">| Delete</a>
+                        </div>
+                    </div>
+        </div>  
+       </div>
+    </main>
+  </div>
+</body> 
+
+
+
+
+
+
+<!-- <div class="dashboard" *ngFor="let rental of rentals" >
+
+  <div class="item">
+      <div class="unitImg">
+      <img src="http://localhost:8888/uploads/{{rental['img']}}" alt="">
+      </div>
+              <div class="unitDetails">
+                  <div class="infoBox">
+                      <h1>Name: {{rental['name']}}</h1>
+                      <h1>description: {{rental['description']}}</h1>
+                      <h2>status: {{rental['status']}}</h2>
+                      <h2>Image: {{rental['img']}} </h2>
+                      <h2>Weekly Cost: {{rental['price']}}</h2>
+                     
+                  </div>
+              </div>
+              <div class="actions">
+                  <div class="actionBox">
+                      <a routerLink="/Update-Unit/{{rental['id']}}">Update |</a> <br>
+                      <hr>  <hr>
+                      <a routerLink="/Remove-Unit/{{rental['id']}}">| Remove</a>
+                  </div>
+              </div>
+  </div>
+          <div class="otherImgContainer">
+              <div class="otherImg">
+                <img src="http://localhost:8888/uploads/{{rental['img']}}" alt="">
+              </div>
+          </div>
+ </div> -->

@@ -1,0 +1,14 @@
+<div class="FormContainer">
+    <button class="backbtn" routerLink="/Admin">Back</button>
+    <div class="formBox">
+        <form (ngSubmit)="updateRental(rentalForm)" #rentalForm="ngForm">
+            <input type="text" ngModel name="name" >
+            <input type="text" ngModel name="description" >
+            <input type="text" ngModel name="status" >
+            <input type="text" ngModel name="price" >
+            <input type="file" ngModel name="img" >
+
+            <input type="submit" value="Update" >
+        </form>
+    </div>
+</div>

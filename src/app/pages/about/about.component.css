@@ -1,0 +1,59 @@
+.about-us {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 36px;
+    color: #4CAF50; /* Green */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .subtitle {
+    font-size: 28px;
+    color: #4CAF50; /* Green */
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .team {
+    text-align: center;
+  }
+  
+  .team-member {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .team-name {
+    font-size: 22px;
+    color: #4CAF50; /* Green */
+  }
+  
+  .team-role {
+    font-size: 16px;
+    color: #aaa;
+  }
+  

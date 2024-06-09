@@ -1,0 +1,36 @@
+<div class="about-us">
+    <div class="container">
+      <h1 class="title">About Us</h1>
+      <p class="description">
+        Welcome to Nextgen Rental Cars, where innovation meets convenience. We offer the latest 
+        in automotive technology and a seamless rental experience.
+      </p>
+  
+      <div class="team">
+        <h2 class="subtitle">Our Team</h2>
+        <div class="team-member" *ngFor="let member of teamMembers">
+          <img [src]="member.photo" alt="{{member.name}}" class="team-photo">
+          <h3 class="team-name">{{member.name}}</h3>
+          <p class="team-role">{{member.role}}</p>
+        </div>
+      </div>
+  
+      <div class="mission">
+        <h2 class="subtitle">Our Mission</h2>
+        <p class="description">
+          At Nextgen Rental Cars, our mission is to provide eco-friendly, affordable, 
+          and technologically advanced rentalsolutions to our customers. We are committed
+           to sustainability and customer satisfaction.
+        </p>
+      </div>
+  
+      <div class="vision">
+        <h2 class="subtitle">Our Vision</h2>
+        <p class="description">
+          To revolutionize the car rental industry by embracing cutting-edge technology
+           and promoting green initiatives that benefit our customers and the planet.
+        </p>
+      </div>
+    </div>
+  </div>
+  

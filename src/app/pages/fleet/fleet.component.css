@@ -1,0 +1,79 @@
+.car-catalog {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .catalog-title {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .car-card {
+    background-color: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .car-image {
+    width: 270px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .car-details {
+    padding: 10px;
+  }
+  
+  .car-model {
+    font-size: 24px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .car-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .car-deal {
+    font-size: 18px;
+    color: #FFD700;
+    margin-bottom: 20px;
+  }
+  .car-price {
+    font-size: 18px;
+    color: #FFD700;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background-color: #45a049;
+  }
+  
