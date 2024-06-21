@@ -46,7 +46,7 @@ constructor(private reservation:ReservationService, private router: Router,
           icon: 'success',
           title: 'Successfully Updated'
         });
-        this.router.navigateByUrl('/Admin');
+        this.router.navigateByUrl('/reservation');
       }else{
         Swal.fire({
           icon: 'error',
