@@ -91,7 +91,7 @@ export class AuthService {
             return res;
           })
         );
-  }
+  } 
 
   // Logout User
   logout(){

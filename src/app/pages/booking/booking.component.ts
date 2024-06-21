@@ -67,6 +67,7 @@ bookingRental(oForm: NgForm){
       }
     })
   }
+  //GETS USER INFO
   fetchUserProfile(){
     console.log('fetching:' + localStorage.getItem('tokenKey'))
     this.authservice.getThisUser().subscribe(res =>{
@@ -76,6 +77,7 @@ bookingRental(oForm: NgForm){
     })
   }
 
+  //SENDS AN EMAIL TO USER 
 form:FormGroup = this.mail.group({
   subject: 'Booking Details',
   from_first_name: this.users.first_nm,
@@ -97,13 +99,6 @@ form:FormGroup = this.mail.group({
     reply_to:  this.users.email
     });
 }
-
-
-
-
-
-
-
 
 
 

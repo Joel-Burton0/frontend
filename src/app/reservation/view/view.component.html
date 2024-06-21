@@ -1,10 +1,23 @@
-<div class="card">
-    <div class="card-header">
-      Featured
-    </div>
-    <div class="card-body">
-      <!-- <h5 class="card-title">{{Fname['Fname']}}</h5> -->
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
+<div class="user">
+  <div class="container">
+   <div class="user-card">
+    <button class="backbtn" routerLink="/reservation">Back</button>
+      <div class="info">
+        <h1>Viewing {{users['Fname']}} {{users['Lname']}}</h1>
+          <h1 class="user-info"> First Name: {{users['Fname']}}</h1>
+          <hr>
+          <h1 class="user-info"> Last Name: {{users['Lname']}}</h1>
+          <hr>
+          <h1 class="user-info"> User's TRN: {{users['TRN']}}</h1>
+          <hr>
+          <h1 class="user-info"> Rent Date: {{users['rentdate']}}</h1>
+          <hr>
+          <h1 class="user-info"> Return Date: {{users['returnDate']}}</h1>
+          <hr>
+          <h1  class="user-info"> Vehicle Name: {{users['vehicle_nm']}}</h1>
+          <hr>
+          <h1  class="user-info"> Rental ID: {{users['rental_id']}}</h1>    
+      </div>
   </div>
+  </div>
+</div>

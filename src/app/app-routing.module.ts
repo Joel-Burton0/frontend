@@ -26,7 +26,7 @@ const routes: Routes = [
   
   // AUTHENTICATION
   {path:'Login', title:'Login', component:AuthComponent },
-  {path:'logout', title:'Login', component:LogoutComponent},
+  {path:'logout', title:'Logged Out', component:LogoutComponent},
   {path:'Register', title:'Register', component:RegisterComponent },
   
   

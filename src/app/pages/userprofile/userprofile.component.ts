@@ -2,8 +2,6 @@ import { Component,OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AuthService } from 'src/app/service/auth.service';
 
-
-
 @Component({
   selector: 'app-userprofile',
   templateUrl: './userprofile.component.html',
@@ -21,7 +19,6 @@ ngOnInit(): void {
   this.fetchUser();
 }
 
-
 fetchUser(){
   console.log('fetching:' + localStorage.getItem('tokenkey'))
   this.authService.getThisUser().subscribe(res =>{
@@ -30,16 +27,6 @@ fetchUser(){
     }
   })
 }
-
-
-// fetchUserData(){
-//   console.log(`INSIDE FETCH USER DATA`);
-// this.authService.getCurrentUser(()=>{
-//   this.user = this.authService.currentuser;
-//   console.log(`USER DATA: ${JSON.stringify(this.user)}`);
-// });
-// }
-
 
 
 

@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { AuthService } from 'src/app/service/auth.service';
-import { NgForm } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ReservationService } from 'src/app/service/reservation.service';
 import { FleetsearchService } from 'src/app/service/fleet.service';
